@@ -62,7 +62,6 @@ namespace veeam_ui_test.Pages
         public int GetFoundJobs()
         {
             var text = foundJobs.Text.Trim();
-            Console.WriteLine(text);
             return StringHelper.getFirstNumber(text);
         }
 
@@ -107,7 +106,7 @@ namespace veeam_ui_test.Pages
 
         private VeeamCareersPage CheckLanguageByText(string language)
         {
-            _driver.FindElement(By.XPath($"//label[contains(., '{language}')]")).Click();
+            _driver.FindElement(By.XPath($"//label[contains(., '{language}') and input[not(@disabled)]]")).Click();
             return this;
         }
 

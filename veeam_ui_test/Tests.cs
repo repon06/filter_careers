@@ -13,13 +13,9 @@ namespace veeam_ui_test
     {
         private IWebDriver _driver;
 
-        [Test]
-        public void SearchJobsTest()
+        [TestCase( "Romania","English", 27)]
+        public void SearchJobsTest(string country, string language, int expectedRomaniaEnglishJobs)
         {
-            var country = "Romania";
-            var language = "English";
-            var expectedRomaniaEnglishJobs = 27;
-
             var careersPage = new VeeamCareersPage(_driver);
 
             //var actualVacanciesFields = careersPage.GetVacanciesElementsOnPage();
@@ -40,7 +36,7 @@ namespace veeam_ui_test
         [SetUp]
         public void BeforeTest()
         {
-            _driver = DriverFactory.GetWebDriver(WebBrowser.chrome);
+            _driver = DriverFactory.GetWebDriver(WebBrowser.Chrome);
             _driver.Url = "https://careers.veeam.com/";
         }
 

@@ -3,13 +3,13 @@ using OpenQA.Selenium.Chrome;
 
 namespace veeam_ui_test.Drivers
 {
-    public class DriverFactory
+    public static class DriverFactory
     {
         public static IWebDriver GetWebDriver(WebBrowser type)
         {
             switch (type)
             {
-                case WebBrowser.chrome:
+                case WebBrowser.Chrome:
                     // options & capabilities
                     var driver = new ChromeDriver();
                     driver.Manage().Window.Maximize();
@@ -23,7 +23,5 @@ namespace veeam_ui_test.Drivers
 
 public enum WebBrowser
 {
-    ie,
-    ff,
-    chrome
+    Chrome
 }
