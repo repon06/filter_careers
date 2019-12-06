@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "veeam_ui_test", "veeam_ui_test\veeam_ui_test.csproj", "{EFCE3508-E9B8-416C-B49B-4C1CC7AB2E7E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFCE3508-E9B8-416C-B49B-4C1CC7AB2E7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFCE3508-E9B8-416C-B49B-4C1CC7AB2E7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFCE3508-E9B8-416C-B49B-4C1CC7AB2E7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFCE3508-E9B8-416C-B49B-4C1CC7AB2E7E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
